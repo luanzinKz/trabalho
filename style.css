@@ -1,0 +1,62 @@
+/* Configurações Gerais */
+body {
+    background-color: #121212; /* Fundo escuro como na imagem */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container Principal */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria as duas colunas */
+    gap: 40px; /* Espaço entre os itens */
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Item de Maçã Individual */
+.apple-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilização das Imagens */
+.apple-item img {
+    width: 180px;  /* Ajuste o tamanho conforme sua necessidade */
+    height: 180px;
+    object-fit: cover;
+    background-color: #fff; /* Fundo branco para as imagens PNG */
+    border-radius: 4px;
+}
+
+/* Textos (Nome e Preço) */
+.apple-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.apple-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.apple-price {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: auto; /* Empurra o preço para o final do bloco */
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr; /* Transforma em 1 coluna no celular */
+    }
+}
